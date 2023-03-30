@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Beggining from './beggining'
 import Nav from './nav'
+import Skills from './skills'
 
 
 
@@ -14,16 +15,28 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-       <section className='grid min-h-screen bg-black'>
+      <section  className='min-h-screen bg-black'>
+        <header>
         <nav className='max-h-20'>
           <Nav/>
         </nav>
-        <section className='text-white h-[50%] mb-[60%]'>
+        </header>
+      <main>
+        <div className='text-white mt-[50%]'>
         <Beggining />
-        </section>
-       </section>
+        <div className='flex mx-auto mt-[70%] w-[15%] animate-bounce'>
+          <img src='./arrow.png' width={100}/>
+        </div>
+       </div>
+       <div className='mt-[50%]'>
+        <Skills />
+       </div>
       </main>
+      </section>
+      <footer className='bg-white'>
+        <h1>asdasd</h1>
+      </footer>
+     
     </>
   )
 }

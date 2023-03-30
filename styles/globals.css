@@ -23,3 +23,18 @@ a {
   text-decoration: none;
 }
 
+.swiper { cursor:grab; }
+
+.swiper::before,
+.swiper::after {
+  z-index: 2;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 100%;
+  translate: -50% 0;
+}
+
+.swiper::before { top: -795vw; }
+
+.swiper::after { bottom: -795vw; }
