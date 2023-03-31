@@ -1,9 +1,7 @@
 import React from 'react';
-import '@splidejs/react-splide/css/core';
-import { Options, Splide, SplideSlide } from '@splidejs/react-splide';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel as ReactCarousel } from 'react-responsive-carousel';
 import { data } from './assets/infoSkills';
-
-
 
 
 
@@ -11,22 +9,28 @@ import { data } from './assets/infoSkills';
 export default function Skills() {
   const infoSkills = data[0].tools;
   return (
-    <div className='bg-white'>
-      <Splide className=''>
-        {infoSkills.map((s) => (
-          <SplideSlide>
-            <div className='text-white p-8 bg-[#18181b] bg-opacity-40 shadow-sm rounded-br-lg rounded-tl-lg shadow-[#070707] w-[80%] mx-auto'>
-            <div className='text-center'>
-            <img src={s.img} className='w-[50%] shadow-lg shadow-[#0000002d] mx-auto'/>
-            <p className='mt-10 mx-auto text-center'>
-              {s.name}
-            </p>
+
+
+      <ReactCarousel
+      showArrows={false}
+      showStatus={false}
+      showThumbs={true}
+      swipeable={true}
+      emulateTouch={true}
+      >
+           {infoSkills.map((t) => {
+              return(
+        <div className='mb-10 text-lg underline text-white font-light bg-[#19191965] shadow-md shadow-[#090909] rounded-lg w-[35%]  mx-auto sm:w-[20%] lg:w-[10%]'>
+                    <div className='cursor-grab'>
+                      <img  src={t.img} alt=""/>
+                      <p>{t.name}</p>
+                    </div>
             </div>
-            </div>
-          </SplideSlide>
-        ))}
-      </Splide>
-    </div>
+              )
+            })}
+      </ReactCarousel>
+
+
 
     //      <div className='grid grid-cols-4 h-[50vh] mt-12 md:grid-cols-5'>
     //       {infoSkills.map((t) => {

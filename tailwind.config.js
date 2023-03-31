@@ -7,6 +7,9 @@ module.exports = {
 
   ],
   theme: {
+    fontFamily: {
+      'myFont' : ['nunito'],
+    },
     extend: {
       keyframes: {
         wave: {
