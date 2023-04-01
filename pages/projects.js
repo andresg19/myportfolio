@@ -13,7 +13,7 @@ export default function Projects() {
       slidesPerView={1}
     >
       {myDataProjects.map((p) => (
-        <SwiperSlide className="text-center">
+        <SwiperSlide className="text-center" key={p.deploy}>
           <p className="text-white text-md font-extralight p-1">{p.description}</p>
           <h2 className="mt-4 text-slate-700 md:text-lg">
             ↓Clickea la imagen para ver el proyecto↓
