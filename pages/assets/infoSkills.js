@@ -12,10 +12,10 @@ export const data = [
        {name:'Redux' , img: './reduxIcon.png'},
        {name:'HTML5' , img: './htmlIcon.png'},
        {name:'CSS3' , img: './cssIcon.png'},
+       {name: 'Tailwind CSS', img :'./tailwind.png'},
        {name:'Bootstrap' , img: './bootIcon.png'},
        {name:'Material-UI' , img: './materialIcon.png'},
        {name:'UI-Design' , img: './ui-design.png'},
-       {name: 'Tailwind CSS', img :'./tailwind.png'},
        {name:'GIT' , img: './gitIcon.png'},
     ],
 }

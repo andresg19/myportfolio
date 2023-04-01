@@ -68,11 +68,11 @@ export default function Footer () {
        src="/gith.png" alt="github img not found" />
        </a>
       </div>
- <div className='grid mt-[5%] text-white w-[50%] mx-auto lg:ml-auto bg-blue-500 '>
-        <h1 className='text-lg text-center lg:ml-[70%]'>Contacto</h1>
+ <div className='grid mt-[5%] text-white w-[50%] mx-auto lg:mr-2 lg:w-[15%] '>
+        <h1 className='text-lg text-center lg:mx-auto'>CONTACTO</h1>
         <form
         onSubmit={sendEmail}
-         className='block lg:ml-auto bg-white'>
+         className='block lg:mx-auto'>
           <input 
           className='flex mt-2 text-white font-light shadow-lg rounded-md mx-auto bg-[#191919bd]'
           type="text" 
