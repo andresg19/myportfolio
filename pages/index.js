@@ -42,6 +42,7 @@ export default function Home() {
                 <Image
                 width={500}
                 height={500}
+                alt="img not found"
                   src="/arrow.png"
                   className="w-[50%] mx-auto cursor-grab sm:w-[35%] sm:mx-auto lg:w-[20%] lg:mx-auto"
                 />

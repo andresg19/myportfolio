@@ -16,6 +16,7 @@ const scrollToTop = () => {
       width={50}
       height={50}
       src='/close.png'
+      alt='img not found'
         className="flex text-4xl text-white items-center w-[10%] cursor-pointer fixed right-1 top-6 z-50 lg:w-[3%]"
         onClick={() => setShowSidebar(!showSidebar)}
       />
@@ -26,6 +27,7 @@ const scrollToTop = () => {
       width={50}
       height={50}
       src='/menu.png'
+      alt='img not found'
         className="flex text-4xl text-white items-center cursor-pointer fixed right-10 top-5 z-50 animate-pulse"
         onClick={() => setShowSidebar(!showSidebar)}
       />
