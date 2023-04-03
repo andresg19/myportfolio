@@ -7,7 +7,7 @@ export default function Projects() {
   const myDataProjects = info;
   return (
     <Swiper
-      className="bg-[#100f0fc2] cursor-ew-resize shadow-md shadow-[#1a1a1a4a] rounded-lg w-[90%]"
+      className="bg-[#100f0fc2] cursor-ew-resize shadow-md shadow-[#1a1a1a4a] rounded-lg w-[70%]"
       loop
       spaceBetween={10}
       slidesPerView={1}

@@ -1,18 +1,24 @@
 import React from 'react';
+import Typewriter from 'typewriter-effect';
 
 const Beggining = () => {
     return ( 
-        <div className='grid w-[100%] h-full font-light space-y-10'>
-        <h2 className='text-2xl mx-auto max-h-[12vh]'>
-        Hola!
-        <img src='./saludo.png' className='animate-waving-hand' width={50}/>
-        </h2>
-        <h2 className='text-3xl mx-auto'>
-            soy Andrés,
-        </h2>
-        <h2 className='text-2xl mx-auto'>un</h2>
-        <h1 className='text-4xl mx-auto'>Full Stack Developer</h1>
+        <div className="grid grid-cols-2 divide-x">
+        <div className='border-none min-h-[40vh]'>
+        <img src='/avatar-maker.png'  className='mx-auto w-[80%] lg:w-[35%]'/>
         </div>
+        <div className='text-2xl border-none mt-[12%] lg:text-4xl'>
+        <Typewriter
+  options={{
+    autoStart: true,
+    strings:['Hola!', 'me llamo Andrés', 'soy un', 'Full Stack Developer'],
+    loop: true,
+  }}
+/>
+
+        </div>
+      </div>
+       
      );
 }
  

@@ -14,7 +14,7 @@ export default function Skills() {
       <ReactCarousel
       showArrows={false}
       showStatus={false}
-      showThumbs={true}
+      showThumbs={false}
       swipeable={true}
       emulateTouch={true}
       >
