@@ -6,6 +6,7 @@ import Projects from "./projects";
 import Cv from "./cv";
 import Footer from "./footer";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -38,8 +39,10 @@ export default function Home() {
                 offset={-250}
                 duration={500}
               >
-                <img
-                  src="./arrow.png"
+                <Image
+                width={500}
+                height={500}
+                  src="/arrow.png"
                   className="w-[50%] mx-auto cursor-grab sm:w-[35%] sm:mx-auto lg:w-[20%] lg:mx-auto"
                 />
               </Link>

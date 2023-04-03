@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import swal from "sweetalert"
 import emailjs from '@emailjs/browser';
 import swaal from 'sweetalert';
+import Image from 'next/image';
 
 
 
@@ -57,13 +58,13 @@ export default function Footer () {
 		<h1 className='font-light text-center text-2xl lg:ml-5'>Andrés Germain dev</h1>
        <br />
        <a href="https://www.linkedin.com/in/andres-germain-dev/">
-       <img
+       <Image width={500} height={500} 
        className=' w-[15%] mx-auto sm:w-[10%] lg:w-[25%]' 
        src="/linke.png" alt="linkeding img not found" />
        </a>
        <br />
        <a href="https://github.com/andresg19">
-       <img
+       <Image width={500} height={500} 
        className=' w-[15%] mx-auto sm:w-[10%] lg:w-[25%]' 
        src="/gith.png" alt="github img not found" />
        </a>

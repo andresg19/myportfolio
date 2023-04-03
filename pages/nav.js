@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -11,16 +12,20 @@ const scrollToTop = () => {
   return (
    <div className='flex'> 
    {showSidebar ? (
-      <img
-      src='./close.png'
+      <Image
+      width={50}
+      height={50}
+      src='/close.png'
         className="flex text-4xl text-white items-center w-[10%] cursor-pointer fixed right-1 top-6 z-50 lg:w-[3%]"
         onClick={() => setShowSidebar(!showSidebar)}
       />
         
     
     ) : (
-      <img
-      src='./menu.png'
+      <Image
+      width={50}
+      height={50}
+      src='/menu.png'
         className="flex text-4xl text-white items-center cursor-pointer fixed right-10 top-5 z-50 animate-pulse"
         onClick={() => setShowSidebar(!showSidebar)}
       />

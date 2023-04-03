@@ -2,6 +2,7 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as ReactCarousel } from 'react-responsive-carousel';
 import { data } from './assets/infoSkills';
+import Image from 'next/image';
 
 
 
@@ -24,7 +25,7 @@ export default function Skills() {
         key={t.name}
         >
                     <div className='cursor-grabbing'>
-                      <img  src={t.img} alt=""/>
+                      <Image  src={t.img} alt="img not found"    width={500}  height={500}/>
                       <p>{t.name}</p>
                     </div>
             </div>
@@ -34,16 +35,6 @@ export default function Skills() {
 
 
 
-    //      <div className='grid grid-cols-4 h-[50vh] mt-12 md:grid-cols-5'>
-    //       {infoSkills.map((t) => {
-    //           return(
-    //               <div className='block ml-auto mr-auto w-[100%] h-[10vh] text-sm text-slate-700 text-center mt-[2%] shadow-sm hover:animate-spin lg:h-[12vh]'>
-    //                   <img className='w-[20%] mt-3 ml-auto mr-auto' src={t.img} alt=""/>
-    //                   <p>{t.name}</p>
-    //               </div>
-    //           )
-    //       })}
-    //   </div>
   );
 }
     

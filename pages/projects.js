@@ -2,6 +2,7 @@ import React from "react";
 import { info } from "./assets/infoProjects";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Image from "next/image";
 
 export default function Projects() {
   const myDataProjects = info;
@@ -19,10 +20,12 @@ export default function Projects() {
             ↓Clickea la imagen para ver el proyecto↓
           </h2>
           <a href={p.deploy}>
-            <img
+            <Image
               className="w-[70%] ml-auto mr-auto mt-3 md:w-[100%] "
               src={p.image}
               alt="img not found"
+              width={1000}
+              height={1000}
             />
           </a>
         </SwiperSlide>
