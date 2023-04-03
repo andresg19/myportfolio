@@ -15,7 +15,7 @@ export default function Cv () {
             className='w-[100%] cursor-pointer' 
             width={500}
             height={500}
-            src="/pdfdown.png" alt="" onClick={handleViewCv}/>
+            src="/pdfdown.png" alt="img not found" onClick={handleViewCv}/>
         </div>
      );
      
